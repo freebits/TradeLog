@@ -1,0 +1,8 @@
+*.o
+*.ali
+*.log
+*.bin
+*.out
+/build/
+/__pycache__/
+/*.tar.gz
