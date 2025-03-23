@@ -1,0 +1,67 @@
+# THIS FILE IS GENERATED. DO NOT EDIT.
+
+[solution]
+[solution.context]
+solved = true
+[[solution.state]]
+crate = "system_random"
+fulfilment = "solved"
+pinned = false
+transitivity = "indirect"
+versions = "^1.0.0"
+[solution.state.release]
+authors = [
+"Anton Fediushin",
+]
+description = "Minimal library to retrieve random data from system sources"
+licenses = "ISC"
+maintainers = [
+"Anton Fediushin <imantonmeep@gmail.com>",
+]
+maintainers-logins = [
+"AntonMeep",
+]
+name = "system_random"
+tags = [
+"system",
+"cryptography",
+"random",
+"security",
+]
+version = "1.0.0"
+website = "https://github.com/AntonMeep/system_random"
+[solution.state.release.origin]
+commit = "3db7f76e04f09ade5811abd8c09686750bc733ae"
+url = "git+https://github.com/AntonMeep/system_random.git"
+[[solution.state]]
+crate = "uuids"
+fulfilment = "solved"
+pinned = false
+transitivity = "direct"
+versions = "^1.0.0"
+[solution.state.release]
+authors = [
+"AJ Ianozi",
+]
+description = "Implementation of RFC 9562 Universally Unique IDentifiers (UUIDs)"
+licenses = "MIT"
+long-description = "This library is an attempt to implement UUIDs to the RFC 9562 standard located here: https://www.ietf.org/rfc/rfc9562.html\n\nAs of this writing it can identify any UUID's version or variant and create any kind of UUID in the spec:\n* UUIDv1: Gregorian Timestamp with constant data\n* UUIDv3: MD5-hashed\n* UUIDv4: Randomly-generated\n* UUIDv5: SHA1-hashed\n* UUIDv6: Gregorian Timestamp with constant data with better database locality \n* UUIDv7: UNIX Timestamp with random data, optimized for database locality\n* UUIDv8: Custom UUIDs\n\nAll of my unit tests are passing, but am open to more tests plus additional validation on other platforms, especially big endian.\n\nRefer to the [UUIDs Readme](https://github.com/AJ-Ianozi/uuids) for full description.\n\nYou can also read the [full API documentation](https://aj-ianozi.github.io/uuids/toc_index.html) which has been generated with [ROBODoc](https://github.com/gumpu/ROBODoc).\n\n"
+maintainers = [
+"AJ Ianozi <aj@ianozi.com>",
+]
+maintainers-logins = [
+"aj-ianozi",
+]
+name = "uuids"
+tags = [
+"uuid",
+"guid",
+]
+version = "1.0.0"
+website = "https://github.com/AJ-Ianozi/uuids"
+[solution.state.release.origin]
+commit = "d5d6d70cab4d70e3e89bc9e04ff66ee90ac93924"
+url = "git+https://github.com/AJ-Ianozi/uuids.git"
+[[solution.state.release.depends-on]]
+system_random = "^1.0.0"
+

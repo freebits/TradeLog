@@ -1,0 +1,14 @@
+name = "tradelog"
+description = "Shop keeping software"
+version = "0.1.0-dev"
+
+authors = ["Your Name"]
+maintainers = ["Your Name <example@example.com>"]
+maintainers-logins = ["freebits"]
+licenses = "BSD-3-Clause"
+website = ""
+tags = []
+
+executables = ["main"]
+
+

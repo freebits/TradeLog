@@ -1,0 +1,38 @@
+with "config/tradelog_config.gpr";
+
+project Tradelog is
+
+   -- Define source directories and config directory
+   for Source_Dirs use ("src", "config");
+   
+   -- Set object directory based on the build profile from the config
+   for Object_Dir use "obj/" & Tradelog_Config.Build_Profile;
+   
+   -- Create missing directories if necessary
+   for Create_Missing_Dirs use "True";
+   
+   -- Define executable directory
+   for Exec_Dir use "bin";
+   
+   -- Specify the main entry point of the application
+   for Main use ("src/tradelog.adb");
+
+   -- Use Ada 2022 features
+   --for "Build" use ("-gnat2022");
+
+   -- Set compiler switches from the config file
+   package Compiler is
+      for Default_Switches ("Ada") use Tradelog_Config.Ada_Compiler_Switches;
+   end Compiler;
+
+   -- Specify additional switches for the binder
+   package Binder is
+      for Switches ("Ada") use ("-Es"); -- Symbolic traceback
+   end Binder;
+
+   -- Specify the installation directory for artifacts
+   package Install is
+      for Artifacts (".") use ("share");
+   end Install;
+
+end Tradelog;

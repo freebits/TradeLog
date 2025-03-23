@@ -1,0 +1,5 @@
+dependency:uuids=1.0.0=39947d2b75409640f7e76d9fe58ba5c99d4d28c91b182f8e75718835d02030a8
+external:LIBRARY_TYPE=default
+external:TRADELOG_LIBRARY_TYPE=default
+profile:tradelog=DEVELOPMENT
+switches:tradelog=-Og,-fdata-sections,-ffunction-sections,-g,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx
